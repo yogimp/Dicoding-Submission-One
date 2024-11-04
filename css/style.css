@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+/* other css file imports */
+@import url('./sections/header.css');
+@import url('./sections/hero.css');
+@import url('./sections/services.css');
+@import url('./sections/why.css');
+@import url('./sections/testimonials.css');
+@import url('./sections/contact.css');
+@import url('./sections/about.css');
+@import url('./sections/subcribe.css');
+@import url('./sections/hire.css');
+@import url('./sections/footer.css');
+
+:root {
+	--primary-color: #3c557d;
+	--secondary-color: #b15480;
+	--tertiary-color: #dad262;
+
+
+	--color-white: #fff;
+	--color-blue: #def0f4;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	width: 100vw;
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Media query for large desktop */
+@media screen and (max-width: 1280px) {
+	.nav-bar .brand a {
+		font-size: 1rem;
+	}
+	.nav-bar .nav-list ul li a {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+}
+/* Media query for small desktop */
+@media screen and (max-width: 910px) {
+
+	/* HERO */
+	.hero__img img {
+		width: 90%;
+	}
+
+	/* HEADER */
+	.nav-bar .brand a {
+		font-size: .75rem;
+	}
+	.nav-bar .nav-list ul li a {
+		font-size: .75rem;
+		padding: 1rem;
+	}
+
+	/* WHY */
+	.why__section-row {
+		padding: 1em;
+	}
+	.why__section-name{
+		font-size: 1.5rem;
+	}
+	.why__section-desc {
+		padding: .75em;
+		font-size: 1rem;
+	}
+
+	/* TESTIMONIAL */
+	.testimonial__title {
+		font-size: 1.5rem;
+	}
+
+	/* CONTACT */
+	.about__section-info p {
+		padding: 1em;
+	}
+	.subcribe__container {
+		flex-basis: 50%;
+	}
+
+	/* ABOUT */
+	.about__info-container {
+		padding: 1em
+	}
+
+	/* HIRE */
+	.hire__info-heading {
+		font-size: 1.25rem;
+	}
+}
+
+/* Media query for horizontal tablet */
+@media screen and (min-width: 769px) {
+	/* HEADER */
+	.nav-bar .nav-list .hamburger {
+		display: none;
+	}
+	.nav-bar {
+		width: 100%;
+	}
+	.nav-bar .nav-list ul {
+		transform: translateX(0);
+		position: initial;
+		padding: 0;
+		z-index: initial;
+		background-color: transparent;
+	}
+	.nav-bar .nav-list ul li {
+		display: inline-block;
+	}
+}
+/* End Media query desktop  */
+
+/* Media Query For tablet */
+@media screen and (max-width:768px) {
+	
+	.border {
+		width: 75px;
+		height: .25em;
+	}
+	/* HERO */
+	.hero__container {
+		flex-direction: column-reverse;
+	}
+	.hero__info {
+		flex: 2;
+	}
+	.hero__img {
+		flex: 1;
+	}
+	.hero__img img {
+		width: 75%;
+		margin-top: 3em;
+	}
+	.hero__info-heading {
+		font-size: 2.5rem;
+	}
+	.hero__info-desc {
+		font-size: 1.5rem;
+		padding: 1em;
+	}
+	.hero__info-button {
+		padding: 1em 1.5em;;
+		font-size: 1rem;
+		letter-spacing: .2rem;
+		margin-top: .5em;
+	}
+	
+
+	/* SERVICES */
+	.services__section {
+		flex-direction: column;
+	}
+	.services__title {
+		font-size: 2rem;
+	}
+	.services__box {
+		max-width: 100%;
+	}
+	.services__section-title {
+		font-size: 1.5rem;
+	}
+	.services__desc {
+		font-size: 1.25rem;
+	}
+
+	/* WHY TRUEVOTE */
+	.why__title {
+		font-size: 2rem;
+	}
+	.why__section-row {
+		flex-direction: column;
+	}
+	.why__section-col{
+		max-width: 100%;
+	}
+
+	/* TESTIMONIALS */
+	.testimonial__title {
+		font-size: 1.75rem;
+	}
+	.testimonial__img img {
+		margin: 1em;
+	}
+	.testimonial__desc p {
+		font-size: 1.2rem;
+		padding: 1.5em;
+	}
+
+	/* CONTACT */
+	.contact__container {
+		flex-direction: column;
+	}
+	.about__title {
+		font-size: 2rem;
+	}
+	.about__info-container {
+		padding: 1em;
+	}
+	.about__img-wrapper img{
+		width: 175px;
+	}
+	.about__section-info p {
+		padding: 1em;
+		line-height: 1.75rem;
+		text-indent: 5px;
+	}
+	.about__info-button {
+		margin-left: 1em;
+	}
+
+	/* HIRE */
+	.hire__article-container {
+		flex-direction: column-reverse;
+	}
+	.hire__info-heading {
+		font-size: 1rem;
+		padding-top: 1.5em 1em;
+	}
+	.hire__info-button {
+		padding: .5em 1em;
+		letter-spacing: .2rem;
+		margin: .5em;
+	}
+	.hire__img img {
+		height: 150px;
+		width: 250px;	
+	}
+
+	/* SUBCRIBE */
+	.subcribe__form{
+		padding: 2em;
+	}
+
+	/* FOOTER */
+	.footer__container{
+		padding: 2em;
+	}
+	.footer__contact-heading {
+		font-size: 1.25rem;
+	}
+	.footer__contact-info {
+		font-size: 1rem;
+	}
+	.footer__social-heading {
+		font-size: 1.5rem;
+	}
+	.footer__social-icon a {
+		font-size: 2rem;;
+	}
+}
+/* End Media Query For tablet  */
+
+/* Media Query For mobile  */
+@media screen and (max-width:480px) {
+	
+	.border {
+		width: 75px;
+		height: .25em;
+	}
+	/* HERO */
+	.hero__container {
+		flex-direction: column-reverse;
+	}
+	.hero__img img {
+		width: 90%;
+		margin-top: 5em;
+	}
+	.hero__info-heading {
+		font-size: 2.5rem;
+	}
+	.hero__info-desc {
+		font-size: 1rem;
+		padding: 1.5em;
+	}
+	.hero__info-button {
+		padding: .75em 1.25em;;
+		font-size: 1rem;
+		letter-spacing: .2rem;
+	}
+
+	/* SERVICES */
+	.services__section {
+		flex-direction: column;
+	}
+	.services__title {
+		font-size: 2rem;
+	}
+	.services__box {
+		max-width: 100%;
+	}
+	.services__section-title {
+		font-size: 1.5rem;
+	}
+	.services__desc {
+		font-size: 1.25rem;
+	}
+
+	/* WHY TRUEVOTE */
+	.why__title {
+		font-size: 2rem;
+	}
+	.why__section-row {
+		flex-direction: column;
+	}
+	.why__section-col{
+		max-width: 100%;
+	}
+
+	/* TESTIMONIALS */
+	.testimonial__title {
+		font-size: 1.75rem;
+	}
+	.testimonial__img img {
+		margin: 1em;
+	}
+	.testimonial__desc p {
+		font-size: 1.2rem;
+		padding: 1.5em;
+	}
+
+	/* CONTACT */
+	.contact__container {
+		flex-direction: column;
+	}
+	.about__title {
+		font-size: 2rem;
+	}
+	.about__info-container {
+		padding: 1em;
+	}
+	.about__img-wrapper img{
+		width: 175px;
+	}
+	.about__section-info p {
+		padding: 1em;
+		line-height: 1.75rem;
+		text-indent: 5px;
+	}
+	.about__info-button {
+		margin-left: 1em;
+	}
+
+	/* HIRE */
+	.hire__article-container {
+		flex-direction: column-reverse;
+	}
+	.hire__info-heading {
+		font-size: 1rem;
+		padding-top: 1.5em 1em;
+	}
+	.hire__info-button {
+		padding: .5em 1em;
+		letter-spacing: .2rem;
+		margin: .5em;
+	}
+	.hire__img img {
+		height: 150px;
+		width: 250px;	
+	}
+
+	/* SUBCRIBE */
+	.subcribe__form{
+		padding: 2em;
+	}
+
+	/* FOOTER */
+	.footer__container{
+		padding: 2em;
+	}
+	.footer__contact-heading {
+		font-size: 1.25rem;
+	}
+	.footer__contact-info {
+		font-size: 1rem;
+	}
+	.footer__social-heading {
+		font-size: 1.5rem;
+	}
+	.footer__social-icon a {
+		font-size: 2rem;;
+	}
+}
+/* End Media Query For mobile  */

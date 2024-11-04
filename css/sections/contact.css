@@ -1,0 +1,12 @@
+/* -------------- CONTACT -------------- */
+.contact__container {
+	min-height: 100vh;
+	display: flex;
+}
+.about__container {
+	flex: 3;
+}
+.subrcibe__container {
+	flex: 1;
+	display: flex;
+}

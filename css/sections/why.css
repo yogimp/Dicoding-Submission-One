@@ -1,0 +1,57 @@
+/* -------------- WHY TRUEVOTE -------------- */
+
+.why__container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.why__title {
+	flex: 1;
+	margin-top: 2.5em;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.border {
+	width: 175px;
+	height: .25em;
+	background: var(--tertiary-color);
+	margin: 1em auto;
+}
+.why__section-row {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.why__section-col{
+	flex: 33.33%;
+	max-width: 33.33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.why__section-col img{
+	width: 120px;
+	height: 120px;
+}
+.why__section-name{
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin: 1em 0;
+	color: var(--secondary-color);
+}
+.stars{
+	color: #82ccdd;
+	margin-bottom: 20px;
+}
+.why__section-desc {
+	font-size: 1.25rem;
+	padding: 2em;
+	text-align: center;
+}
